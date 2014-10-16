@@ -1,0 +1,40 @@
+{
+  "name": "emerald",
+  "version": "1.0.0",
+  "description": "emerald web scaffolding",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "bower-resolve": "^2.2.0",
+    "browser-sync": "^1.5.8",
+    "browserify": "^6.1.0",
+    "gulp": "^3.8.8",
+    "gulp-bower": "0.0.6",
+    "gulp-filter": "^1.0.2",
+    "gulp-if": "^1.2.4",
+    "gulp-inject": "^1.0.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-minify-css": "^0.3.10",
+    "gulp-minify-html": "^0.1.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-template": "^1.1.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^2.2.0",
+    "lodash": "^2.4.1",
+    "path": "^0.4.9",
+    "require-dir": "^0.1.0",
+    "rimraf": "^2.2.8",
+    "tiny-lr": "^0.1.4",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "browserify": {
+    "transform": [
+    ]
+  }
+}

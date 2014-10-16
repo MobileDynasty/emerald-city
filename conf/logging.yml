@@ -1,0 +1,32 @@
+version: 1
+# necessary to prevent disabling of loggers defined before config call
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: '%(asctime)s: %(levelname)s(%(name)s): %(message)s'
+  verbose:
+    format: '%(asctime)s: %(levelname)s(%(name)s): [%(module)s, %(process)d, %(thread)d]: %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+  file:
+    class: dorthy.logging.EnvRotatingFileHandler
+    formatter: verbose
+    filename: log/server-{SERVER_PORT}.log
+    maxBytes: 10485760
+    backupCount: 5
+loggers:
+  da:
+    level: DEBUG
+    handlers: [console]
+    propagate: False
+  sqlalchemy:
+    level: DEBUG
+    handlers: [console]
+    propagate: False
+root:
+  level: INFO
+  handlers: [console]

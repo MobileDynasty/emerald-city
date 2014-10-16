@@ -1,0 +1,19 @@
+{
+  "name": "emerald",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.2",
+    "bootstrap-sass-official": "~3.2",
+    "font-awesome": "~4.2",
+    "angular": "1.2.25",
+    "angular-resource": "1.2.25",
+    "angular-bootstrap": "~0.11",
+    "angular-ui-router": "~0.2",
+    "angular-ui-grid": "~3.0",
+    "jquery": "~2.1",
+    "lodash": "~2.4"
+  },
+  "resolutions": {
+    "angular": "1.2.25"
+  }
+}

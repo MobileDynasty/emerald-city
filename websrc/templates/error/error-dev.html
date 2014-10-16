@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Server Error</title>
+<style>
+body {
+  margin: 50px;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<h1>A server error has occurred.</h1>
+<p>
+Status Code: {( error.status_code )}
+<p>
+Message: {( error.message )}
+{% if error.stack %}
+<p>
+Stack Trace:<br/>
+{% for item in error.stack %}
+{( item )}<br/>
+{% endfor %}
+</p>
+{% endif %}
+</body>
+</html>

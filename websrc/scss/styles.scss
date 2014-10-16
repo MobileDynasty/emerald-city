@@ -1,0 +1,11 @@
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], .data-ng-cloak, .ng-cloak {
+  display: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Emerald City - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{( static_url('css/login.css') )}" />
+    <link href="{( static_url('img/favicon.ico') )}" rel="shortcut icon" />
+</head>
+
+<body>
+
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="login-form">
+                <form role="form" name="login-form" action="/auth/login" method="post" novalidate>
+                    <div class="form-group">
+                        <img src="{( static_url('img/logo.png') )}" alt="Logo">
+                        <hr>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input class="form-control" name="username" type="text" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input class="form-control" name="password" type="password" placeholder="Password">
+                        </div>
+                        <input class="btn btn-primary pull-right" type="submit" name="login" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
